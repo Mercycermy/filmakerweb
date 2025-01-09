@@ -1,0 +1,27 @@
+/* App.css or global.css */
+
+
+.light {
+ --primary-color: #F7DDCF; /* Very Light Peach */
+  --secondary-color: #E76D3C; /* Light Orange Spice */
+  --accent-color: #F3AA85; /* Very Light Mahogany */
+  --text-color: #734231; /* Ultra Very Dark Desert Sand */
+  --background-color: #FFFFFF; /* White */
+  --button-hover-color: #690D1A; /* Dark Garnet */
+}
+
+.dark {
+  --primary-color: #734231; /* Ultra Very Dark Desert Sand */
+  --secondary-color: #690D1A; /* Dark Garnet */
+  --accent-color: #E76D3C; /* Light Orange Spice */
+  --text-color: #F7DDCF; /* Very Light Peach */
+  --background-color: #000000; /* Black */
+  --button-hover-color: #F3AA85; /* Very Light Mahogany */
+}
+
+.app {
+    background-color: var(--secondary-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+

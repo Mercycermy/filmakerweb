@@ -1,0 +1,48 @@
+.footer {
+ margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--text-color);
+    padding: 15px 0;
+    color: var(--text-color);
+}
+
+.footer-content {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px; /* Space between icons */
+}
+
+.footer-socials a {
+  color: var(--text-color);
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--accent-color); /* Highlight color on hover */
+  transform: scale(1.2); /* Slight enlargement */
+}
+
+/* -------------------------Media Query--------------------- */
+@media (max-width: 600px) {
+  .footer {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-content {
+    margin-bottom: 15px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    gap: 20px;
+  }
+}

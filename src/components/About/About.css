@@ -1,0 +1,55 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.about-right {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.about-right h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.about-right h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: var(--primary-color);
+}
+
+.about-right p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.more-info {
+    margin-top: 20px;
+}
