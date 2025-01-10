@@ -1,65 +1,87 @@
-.programs{
-    margin: 20px ;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+.programs {
+  margin: 20px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
 }
-.program img{
-    width: 95%;
-    border-radius: 10px;
-    display: block;
-    margin: 25px;
+
+.program {
+  flex-basis: 31%;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.program{
-    flex-basis: 31%;
-    position: relative;
+
+.program img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
 }
-.caption{
-    border-radius: 10px;
+
+.caption {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background: var(--accent-color);
+  background: rgba(247, 221, 207, 0.6);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  padding: 20px;
   color: var(--primary-color);
   cursor: pointer;
   opacity: 0;
-  transition: 0.4s;
+  transition: opacity 0.4s ease-in-out;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
+
 .caption h3 {
-  margin: 10px ;
+  margin: 10px 0;
   font-size: 1.5em;
-  color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .caption p {
   font-size: 1em;
   line-height: 1.6;
-  margin: 10px ;
-  color: var(--text-color);
-}
-.program:hover .caption{
-    opacity: 1;
+  margin: 10px 0;
+  color: var(--primary-color);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limits paragraph lines */
+  -webkit-box-orient: vertical;
 }
 
-/* -------------------------Media Query--------------------- */
+.program:hover .caption {
+  opacity: 1;
+}
 
+/* Responsive Design for Smaller Screens */
 @media (max-width: 650px) {
-    .programs{
-        flex-direction: column;
-    }
-    .program{
-        flex-basis: 100%;
-        margin: 20px;
-    }
-    .caption h3 {
+  .programs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program {
+    flex-basis: 100%;
+    margin: 20px 0;
+  }
+
+  .caption {
+    padding: 15px;
+  }
+
+  .caption h3 {
     font-size: 1.2em;
   }
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import './Contact.css';
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'; 
+
 import msg_icon from '../../assets/msg-icon.png';
 import mail_icon from '../../assets/mail-icon.png';
 import phone_icon from '../../assets/phone-icon.png';
@@ -61,15 +63,21 @@ const Contact = () => {
 
             {/* Contact Information Section */}
             <div className="contact-info">
-                <p>
-                    Feel free to reach out 
-                </p>
-                <ul>
-                    <li><img src={mail_icon} alt="" />sklasemebew@gmail.com</li>
-                    <li><img src={mail_icon} alt="" />Gedistuciopk@gmail.com</li>
-                    <li><img src={phone_icon} alt="" />+251 94 152 5061</li>
-                    <li><img src={location_icon} alt="" />Ethiopia</li>
-                </ul>
+                <p>Feel free to reach out</p>
+  <ul>
+    <li>
+      <FaEnvelope />  sklasemebew@gmail.com
+    </li>
+    <li>
+      <FaEnvelope />  Gedistuciopk@gmail.com
+    </li>
+    <li>
+      <FaPhoneAlt /> +251 94 152 5061
+    </li>
+    <li>
+      <FaMapMarkerAlt />  Ethiopia
+    </li>
+  </ul>
             </div>
         </motion.div>
     );

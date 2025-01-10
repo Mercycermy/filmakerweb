@@ -1,33 +1,41 @@
 nav {
-    width: 100%;
-    background: var(--secondary-color);; 
-    color: var(--text-color);
-    padding: 4px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
+     width: 100%;
+  background:transparent;
+  color: #F3AA85;
+  padding: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
 }
 
 .logo {
     /*width: 180px;*/
-    .logo {
-    font-size: 2rem; /* Adjust font size */
-    font-weight: bold;
-    color: var(--primary-color); /* Use a suitable color */
-    text-transform: uppercase; /* Optional for styling */
-    letter-spacing: 2px; /* Adjust spacing */
-}
+     top: 0;
+    left: 0;
+    
+  width: 45%; /* Adjust the width to fit the size in your image */
+  height: 80px; /* Adjust the height accordingly */
+  background-color: var(--secondary-color); /* Set background color */
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); /* Custom polygon for trapezoid shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color); /* Text color */
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  
+
 
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 5px 20px;
+    margin: 25px 20px;
     font-size: 16px;
+    font-weight: bold;
 }
 .dark-nav{
     background: var(--secondary-color);
@@ -50,6 +58,7 @@ nav ul li{
   font-size: 1.5rem;
   color: var(--primary-color);
   transition: color 0.3s ease;
+  margin-right: 30px;
 }
 
 .theme-toggle:hover {
@@ -64,7 +73,7 @@ nav ul li{
 
 @media (max-width: 1000px) {
     .logo{
-        width: 140px;
+        width:70% ;
     }
     .nav ul li{
         margin: 10px 15px;
@@ -73,7 +82,7 @@ nav ul li{
 
 @media (max-width: 840px) {
     nav{
-        padding: 15px 0;
+        padding: 0;
     }
     nav ul{
         position: fixed;
@@ -94,6 +103,7 @@ nav ul li{
         display: block;
         width: 30px;
         cursor: pointer;
+        margin: 30px;
     }
     .hide-mobile-menu{
         right: -200px;
