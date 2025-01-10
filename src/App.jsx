@@ -23,8 +23,8 @@ function App() {
         <Client />
         <Testimonials />
         <Contact />
-        <Icon1 />
         <Footer />
+        <Icon1 />
       
     </div>
   );

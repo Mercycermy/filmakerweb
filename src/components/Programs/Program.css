@@ -56,7 +56,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4; /* Limits paragraph lines */
   -webkit-box-orient: vertical;
 }
 
