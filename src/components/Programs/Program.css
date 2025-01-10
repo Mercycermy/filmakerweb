@@ -28,16 +28,15 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(247, 221, 207, 0.6);
+  background:  rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  color: var(--primary-color);
   cursor: pointer;
   opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  
   border-radius: 10px;
   box-sizing: border-box;
 }
@@ -45,14 +44,14 @@
 .caption h3 {
   margin: 10px 0;
   font-size: 1.5em;
-  color: var(--text-color);
+  color: #F7DDCF;
 }
 
 .caption p {
   font-size: 1em;
   line-height: 1.6;
   margin: 10px 0;
-  color: var(--primary-color);
+  color: #FFFFFF;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;

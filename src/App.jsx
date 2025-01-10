@@ -18,7 +18,6 @@ function App() {
     <div id="top" className={`${themeName} app`}>
       <Navbar />
       <Hero />
-      <div className="container">
         <About />
         <Programs />
         <Client />
@@ -26,7 +25,7 @@ function App() {
         <Contact />
         <Icon1 />
         <Footer />
-      </div>
+      
     </div>
   );
 }

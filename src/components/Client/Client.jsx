@@ -12,12 +12,12 @@ import { motion } from "framer-motion";
 
 const Client = () => {
   return (
-    <div id="client" className="client"> {/* Added id="client" */}
+    <div id="client" className="client">
       <h1 className="client-title">Our Clients</h1>
       <motion.div
         initial={{ opacity: 0, x: -200 }}
-        transition={{ duration: 2 }}
-        whileInView={{ opacity: 2, x: 0 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.5 }}
         className="gallery-slider"
       >
         <div className="gallery">
@@ -34,6 +34,5 @@ const Client = () => {
     </div>
   );
 };
-
 
 export default Client;

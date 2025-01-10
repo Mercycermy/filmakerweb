@@ -3,9 +3,6 @@ import './Contact.css';
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'; 
 
 import msg_icon from '../../assets/msg-icon.png';
-import mail_icon from '../../assets/mail-icon.png';
-import phone_icon from '../../assets/phone-icon.png';
-import location_icon from '../../assets/location-icon.png';
 import white_arrow from '../../assets/white-arrow.png';
 import { motion } from "framer-motion";
 

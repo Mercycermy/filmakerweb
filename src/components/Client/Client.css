@@ -21,7 +21,7 @@
 .gallery {
     display: flex;
     gap: 30px;
-    animation: slide 15s linear infinite; /* Sliding animation */
+    animation: slide 8s linear infinite; /* Adjusted to 8s for automatic sliding every second */
 }
 
 .gallery img {
@@ -35,7 +35,23 @@
 }
 
 /* Sliding animation */
-
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 /* Responsive Design */
 @media (max-width: 800px) {

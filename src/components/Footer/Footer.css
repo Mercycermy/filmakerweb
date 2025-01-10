@@ -9,6 +9,7 @@
 }
 
 .footer-content {
+  padding: 10px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -16,12 +17,14 @@
 .footer-socials {
   display: flex;
   gap: 15px; /* Space between icons */
+  margin: 15px;
 }
 
 .footer-socials a {
   color: var(--text-color);
   font-size: 20px;
   transition: color 0.3s ease, transform 0.3s ease;
+
 }
 
 .footer-socials a:hover {
