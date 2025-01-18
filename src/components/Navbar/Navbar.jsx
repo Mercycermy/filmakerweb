@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useContext } from 'react';
 import './Navbar.css';
-import logo from '../../assets/logo.png';
 import { Link } from 'react-scroll';
 import menu_icon from '../../assets/menu-icon.png';
 import ThemeContext from '../../contexts/theme'; // Adjust the path as needed
@@ -31,11 +30,11 @@ const Navbar = () => {
       <h3 className="logo">Akilas Amebaw</h3>
 
       <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
-       <li>
-  <Link to="hero" smooth={true} offset={0} duration={500}>
-    Home
-  </Link>
-</li>
+        <li>
+          <Link to="hero" smooth={true} offset={0} duration={500}>
+            Home
+          </Link>
+        </li>
 
         <li>
           <Link to="about" smooth={true} offset={-150} duration={500}>
@@ -47,11 +46,11 @@ const Navbar = () => {
             Program
           </Link>
         </li>
-       <li>
-  <Link to="client" smooth={true} offset={-100} duration={500}>
-    Client
-  </Link>
-</li>
+        <li>
+          <Link to="client" smooth={true} offset={-100} duration={500}>
+            Client
+          </Link>
+        </li>
 
         <li>
           <Link to="testimonials" smooth={true} offset={-260} duration={500}>

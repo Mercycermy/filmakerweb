@@ -11,6 +11,8 @@
 body {
   background: var(--background-color);
   color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -20,7 +22,10 @@ a {
   cursor: pointer;
 }
 
-
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .btn {
   background: var(--primary-color);

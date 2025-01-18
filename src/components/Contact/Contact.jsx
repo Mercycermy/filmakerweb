@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.css';
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa'; 
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 import msg_icon from '../../assets/msg-icon.png';
 import white_arrow from '../../assets/white-arrow.png';
@@ -34,9 +34,6 @@ const Contact = () => {
 
     return (
         <motion.div
-            initial={{ opacity: 0, x: -200 }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
             className='contact'>
             {/* Title and Image Section */}
             <div className="contact-header">
@@ -61,21 +58,28 @@ const Contact = () => {
             {/* Contact Information Section */}
             <div className="contact-info">
                 <p>Feel free to reach out</p>
-  <ul>
-    <li>
-      <FaEnvelope />  sklasemebew@gmail.com
-    </li>
-    <li>
-      <FaEnvelope />  Gedistuciopk@gmail.com
-    </li>
-    <li>
-      <FaPhoneAlt /> +251 94 152 5061
-    </li>
-    <li>
-      <FaMapMarkerAlt />  Ethiopia
-    </li>
-  </ul>
+                <ul>
+                    <li>
+                        <FaEnvelope />
+                        <a href="mailto:akilasamebaw@gmail.com">akilasamebaw@gmail.com</a>
+                    </li>
+                    <li>
+                        <FaPhoneAlt />
+                        <a href="tel:+251941525061">+251 94 152 5061</a>
+                    </li>
+                    <li>
+                        <FaMapMarkerAlt />
+                        <a
+                            href="https://www.google.com/maps?q=Addis+Ababa,+Ethiopia"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ethiopia, Addis Ababa
+                        </a>
+                    </li>
+                </ul>
             </div>
+
         </motion.div>
     );
 };

@@ -8,9 +8,6 @@ import { motion } from "framer-motion";
 const Programs = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -200 }}
-      transition={{ duration: 1 }}
-      whileInView={{ opacity: 1, x: 0 }}
       className="programs">
       <div className="program">
         <img src={program_1} alt="Tikur Ababa" />

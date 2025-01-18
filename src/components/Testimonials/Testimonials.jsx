@@ -110,6 +110,7 @@ const Testimonials = () => {
 
   return (
     <div className='testimonials'>
+      <h1 className="testimonials-title">Testimonials</h1>
       <img src={next_icon} className='next-btn' onClick={slideForword} alt="Next" />
       <img src={back_icon} className='back-btn' onClick={slideBackword} alt="Back" />
       <div className="slider">
@@ -134,29 +135,28 @@ const Testimonials = () => {
           ))}
         </ul>
       </div>
-
-  {/* Popup for additional details */}
-{popupVisible && (
-  <div className="popup-overlay" onClick={closePopup}>
-    <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-      <h2>More Details</h2>
-      <div className="popup-details">
-        {selectedPopupData.slice(0, 3).map((detail, idx) => (
-          <div key={idx} className="popup-item">
-            <img src={detail.img} alt={detail.title} className="popup-image" />
-            
+  
+      {/* Popup for additional details */}
+      {popupVisible && (
+        <div className="popup-overlay" onClick={closePopup}>
+          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+            <h2>More Details</h2>
+            <div className="popup-details">
+              {selectedPopupData.slice(0, 3).map((detail, idx) => (
+                <div key={idx} className="popup-item">
+                  <img src={detail.img} alt={detail.title} className="popup-image" />
+                </div>
+              ))}
+            </div>
+            <p className="popup-description">
+              {selectedPopupData.find(item => item.description)?.description || "No description available"}
+            </p>
+            <button onClick={closePopup}>Close</button>
           </div>
-        ))}
-      </div>
-      <p className="popup-description">
-        {selectedPopupData.find(item => item.description)?.description || "No description available"}
-      </p>
-      <button onClick={closePopup}>Close</button>
+        </div>
+      )}
     </div>
-  </div>
-)}
-    </div>
-  );
+  );  
 };
 
 export default Testimonials;

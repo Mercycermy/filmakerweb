@@ -11,9 +11,7 @@ const About = () => {
 
     return (
         <motion.div
-            initial={{ opacity: 0, x: 200 }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
+           
             className='about' id='about'>
             <div className="about-right">
                 <h1 className="about-title">About Me</h1> {/* Added Title */}

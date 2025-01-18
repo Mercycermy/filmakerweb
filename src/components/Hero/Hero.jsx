@@ -8,9 +8,6 @@ const Hero = () => {
     <div className='background'>
       <div id="hero" className="hero-container">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.5 }}
           className="hero-text"
         >
           <h1>Akilas Amebaw</h1>

@@ -1,10 +1,10 @@
 .testimonials {
-    margin: 80px auto;
+    margin: 90px auto;
     padding: 0 20px;
     position: relative;
     max-width: 800px;  /* Fixed max-width */
     width: 100%;
-    height: 450px;     /* Increased height for better visibility */
+    height: 500px;     /* Increased height for better visibility */
     overflow: hidden;
 }
 
@@ -23,6 +23,13 @@
 .back-btn {
     right: auto;
     left: 0;
+}
+.testimonials-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--text-color);
 }
 
 .slider {

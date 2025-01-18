@@ -1,7 +1,8 @@
 .client {
-    margin: 80px auto;
+    margin: 0 auto; /* Adjusted margin to remove any unwanted space */
     width: 98%;
     text-align: center;
+    padding: 0; /* Ensure no additional padding is causing the white space */
 }
 
 .client-title {
@@ -16,16 +17,17 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+    padding: 0; /* Ensure no padding causes overflow */
 }
 
 .gallery {
     display: flex;
     gap: 30px;
-    animation: slide 8s linear infinite; /* Adjusted to 8s for automatic sliding every second */
+    animation: slide 8s linear infinite;
 }
 
 .gallery img {
-    width: 15%;
+    width: 25%;
     border-radius: 10px;
     transition: transform 0.9s ease;
 }

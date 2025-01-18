@@ -1,24 +1,32 @@
 import React from 'react';
 import './Footer.css';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaWhatsapp, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
+        <a
+          href="/filmakerweb/privacypolicy"
+
+        >
+          Privacy Policy
+        </a>
         <p>© 2024  Akilas Amebaw. All rights reserved.</p>
       </div>
       <div className="footer-socials">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <FaFacebookF />
+
+        <a href="https://wa.me/251941525051" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <FaWhatsapp />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-          <FaTwitter />
+        <a href="https://www.youtube.com/@akilasamebaw636" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <FaYoutube />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+
+        <a href="https://et.linkedin.com/in/akilas-amebaw-1898441b2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FaLinkedinIn />
         </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://www.instagram.com/akilas_a/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <FaInstagram />
         </a>
       </div>

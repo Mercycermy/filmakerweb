@@ -33,7 +33,7 @@ nav {
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 25px 20px;
+    margin: 20px 15px;
     font-size: 16px;
     font-weight: bold;
 }
@@ -47,8 +47,9 @@ nav ul li{
 }
 .navbar-icons {
   display: flex;
+  margin-right: 20px;
   align-items: center;
-  gap: 10px; /* Space between the theme icon and menu icon */
+  gap: 3px; /* Space between the theme icon and menu icon */
 }
 
 .theme-toggle {
@@ -58,7 +59,7 @@ nav ul li{
   font-size: 1.5rem;
   color: var(--primary-color);
   transition: color 0.3s ease;
-  margin-right: 30px;
+  margin-right: 15px;
 }
 
 .theme-toggle:hover {
@@ -71,16 +72,8 @@ nav ul li{
 }
 /* -------------------------Media Query--------------------- */
 
-@media (max-width: 1000px) {
-    .logo{
-        width:70% ;
-    }
-    .nav ul li{
-        margin: 10px 15px;
-    }
-}
 
-@media (max-width: 840px) {
+@media (max-width: 1200px) {
     nav{
         padding: 0;
     }

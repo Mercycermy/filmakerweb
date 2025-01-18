@@ -15,9 +15,6 @@ const Client = () => {
     <div id="client" className="client">
       <h1 className="client-title">Our Clients</h1>
       <motion.div
-        initial={{ opacity: 0, x: -200 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1.5 }}
         className="gallery-slider"
       >
         <div className="gallery">
