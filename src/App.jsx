@@ -11,14 +11,14 @@ import Footer from './components/Footer/Footer';
 import ThemeContext from './contexts/theme';
 import Icon1 from './components/icon/icon';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Use HashRouter instead of BrowserRouter
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Use HashRouter
 
 function App() {
   const { themeName } = useContext(ThemeContext);
 
   return (
     <div className={`app ${themeName}`} id="top">
-      <Router basename="/filmakerweb">
+      <Router>
         <Routes>
           <Route path="/" element={
             <>
