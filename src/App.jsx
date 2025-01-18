@@ -11,34 +11,32 @@ import Footer from './components/Footer/Footer';
 import ThemeContext from './contexts/theme';
 import Icon1 from './components/icon/icon';
 import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Router and Route
-
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; // Use HashRouter instead of BrowserRouter
 
 function App() {
   const { themeName } = useContext(ThemeContext);
 
   return (
-    
-      <div className={`app ${themeName}`}  id="top">
-        <Router  basename="/filmakerweb">
-          <Routes>
-            <Route path="/" element={
+    <div className={`app ${themeName}`} id="top">
+      <Router basename="/filmakerweb">
+        <Routes>
+          <Route path="/" element={
             <>
-            <Navbar />
-            <Hero />
-            <About />
-            <Programs />
-            <Client />
-            <Testimonials />
-            <Contact />
-            <Footer />
+              <Navbar />
+              <Hero />
+              <About />
+              <Programs />
+              <Client />
+              <Testimonials />
+              <Contact />
+              <Footer />
             </>
           } />
-         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-          </Routes>
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+        </Routes>
         <Icon1 />
-        </Router>
-      </div>
+      </Router>
+    </div>
   );
 }
 

@@ -7,8 +7,13 @@ import { motion } from "framer-motion";
 
 const Programs = () => {
   return (
-    <motion.div
-      className="programs">
+    <motion.div className="programs">
+      {/* Title Section */}
+      <div className="programs-title">
+        <h2>Featured Programs</h2>
+        <p>Explore some of the most notable programs and projects we have worked on.</p>
+      </div>
+
       <div className="program">
         <img src={program_1} alt="Tikur Ababa" />
         <div className="caption">
@@ -23,7 +28,7 @@ const Programs = () => {
         <div className="caption">
           <h3>Focus on Ability Short Film Festival 2022</h3>
           <p>
-           The image promotes the 2022 Focus on Ability Short Film Festival hosted by Nova Employment. It highlights an international short film entry titled Stay on Humanity by Akilal Amebaw from Ethiopia. The festival awards over $100,000 in prizes and ran from August 16 to August 22, 2022. The website for more details is www.focusonability.com.au.
+            The image promotes the 2022 Focus on Ability Short Film Festival hosted by Nova Employment. It highlights an international short film entry titled Stay on Humanity by Akilal Amebaw from Ethiopia. The festival awards over $100,000 in prizes and ran from August 16 to August 22, 2022. The website for more details is www.focusonability.com.au.
           </p>
         </div>
       </div>
