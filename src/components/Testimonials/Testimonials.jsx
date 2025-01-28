@@ -139,7 +139,7 @@ const Testimonials = () => {
       {/* Popup for additional details */}
       {popupVisible && (
         <div className="popup-overlay" onClick={closePopup}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
+          <div className="popup-content1" onClick={(e) => e.stopPropagation()}>
             <h2>More Details</h2>
             <div className="popup-details">
               {selectedPopupData.slice(0, 3).map((detail, idx) => (

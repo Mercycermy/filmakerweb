@@ -130,7 +130,7 @@
 }
 .see-more-icon {
   font-size: 24px;
-  color: #E76D3C;
+  color:var(--button-hover-color);
   cursor: pointer;
   margin-top: 10px;
 }
@@ -148,8 +148,8 @@
   z-index: 1000;
 }
 
-.popup-content {
-  background: #F3AA85;
+.popup-content1 {
+  background:var(--button-hover-color);
   padding: 20px;
   border-radius: 8px;
   max-width: 900px;

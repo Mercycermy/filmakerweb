@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
+  
 }
 
 .program {
@@ -24,22 +25,6 @@
   width: 100%;
   border-radius: 10px;
   display: block;
-}
-.programs-title {
-  text-align: center;
-  margin-bottom: 40px;
-  
-}
-
-.programs-title h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-.programs-title p {
-  font-size: 1.2rem;
-  color:var(--text-color);
 }
 .program-image-wrapper {
   cursor: pointer;
@@ -74,19 +59,18 @@
 
 /* Popup content */
 .popup-content {
-  
+  position: relative;
+  background: var(--redish-color);
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 500px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  position: relative;
+  max-width: 800px;
+  width: 100%;
 }
+
 
 .popup-content h3 {
   font-size: 1.8rem;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   margin-bottom: 10px;
 }
 

@@ -1,7 +1,7 @@
 .whatsapp-icon-circle,
 .email-icon-circle {
-  background-color: #25D366; /* WhatsApp color for WhatsApp */
-  background-color: #EA4335; /* Email color for Email */
+  /* WhatsApp color for WhatsApp */
+  background-color:var(--background-color);; /* Email color for Email */
   border-radius: 50%;
   padding: 10px;
 }

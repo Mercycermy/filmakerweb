@@ -7,7 +7,9 @@
   --accent-color: #E76D3C; /* Light Orange Spice */
   --text-color: #F7DDCF; /* Very Light Peach */
   --background-color: #000000; /* Black */
-  --button-hover-color: #F3AA85; /
+  --button-hover-color: #F3AA85; 
+  --background-color:  #EA4335;
+  --redish-color:  #eb5c5c;
 }
 
 .dark {
@@ -17,6 +19,8 @@
   --text-color: #E0E0E0; /* Light Gray for primary text */
   --background-color: #000000; /* True Black for the main background */
   --button-hover-color: #797575e9;
+  --background-color: #1F1F1F;
+  --redish-color:#1d1d1d;
 }
 
 .app {
@@ -24,4 +28,3 @@
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
 }
-

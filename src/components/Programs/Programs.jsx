@@ -49,7 +49,7 @@ const Programs = () => {
       </div>
 
 
-      <div class="programs">
+      <div className="programs">
     {/* Program Cards */}
     {programDetails.map((program) => (
         <div
