@@ -10,7 +10,9 @@
 .contact-header {
     text-align: center;
     margin-bottom: 40px;
+    color: var(--primary-color);
 }
+
 
 .contact-header .msg-icon {
     width: 50px;

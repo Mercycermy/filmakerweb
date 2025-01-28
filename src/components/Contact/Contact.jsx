@@ -1,35 +1,33 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import './Contact.css';
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 import msg_icon from '../../assets/msg-icon.png';
 import white_arrow from '../../assets/white-arrow.png';
 import { motion } from "framer-motion";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const [result, setResult] = React.useState("");
+    const [result, setResult] = useState("");
+    const form = useRef();
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        setResult("Sending....");
-        const formData = new FormData(event.target);
+        setResult("Sending...");
 
-        formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
-
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
+        emailjs.sendForm(
+            'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+            'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+            form.current,
+            'YOUR_USER_ID' // Replace with your EmailJS user ID
+        ).then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
             setResult("Form Submitted Successfully");
             event.target.reset();
-        } else {
-            console.log("Error", data);
-            setResult(data.message);
-        }
+        }).catch((error) => {
+            console.error('FAILED...', error);
+            setResult("An error occurred. Please try again later.");
+        });
     };
 
     return (
@@ -43,12 +41,12 @@ const Contact = () => {
 
             {/* Form Section */}
             <div className="form-col">
-                <form onSubmit={onSubmit}>
-                    <label htmlFor="">Your name</label>
-                    <input type="text" name='name' placeholder='Enter your name' required />
-                    <label htmlFor="">Phone Number</label>
-                    <input type="tel" name='phone' placeholder='Enter your mobile number' required />
-                    <label htmlFor="">Write your message here</label>
+                <form ref={form} onSubmit={onSubmit}>
+                    <label htmlFor="name">Your name</label>
+                    <input type="text" name='user_name' placeholder='Enter your name' required />
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name='user_email' placeholder='Enter your email' required />
+                    <label htmlFor="message">Write your message here</label>
                     <textarea name="message" rows="6" placeholder='Enter your message'></textarea>
                     <button type='submit' className='btn dark-btn'>Submit now <img src={white_arrow} alt="" /></button>
                 </form>

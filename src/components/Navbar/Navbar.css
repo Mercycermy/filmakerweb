@@ -14,7 +14,7 @@ nav {
      top: 0;
     left: 0;
     
-  width: 45%; /* Adjust the width to fit the size in your image */
+  width: 55%; /* Adjust the width to fit the size in your image */
   height: 80px; /* Adjust the height accordingly */
   background-color: var(--secondary-color); /* Set background color */
   clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%); /* Custom polygon for trapezoid shape */
@@ -47,7 +47,7 @@ nav ul li{
 }
 .navbar-icons {
   display: flex;
-  margin-right: 20px;
+  margin-right: 5px;
   align-items: center;
   gap: 3px; /* Space between the theme icon and menu icon */
 }
@@ -59,7 +59,7 @@ nav ul li{
   font-size: 1.5rem;
   color: var(--primary-color);
   transition: color 0.3s ease;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .theme-toggle:hover {

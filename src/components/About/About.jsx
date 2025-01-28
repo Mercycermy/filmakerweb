@@ -24,7 +24,7 @@ const About = () => {
                 {showMore && (
                     <div className="more-info">
                         <p>
-                            Recently, I completed "Tikur Ababa," the first-ever comedy-horror TV series in Ethiopia's history, produced to international standards. 
+                            Recently, I completed "Tikur Abeba," the first-ever comedy-horror TV series in Ethiopia's history, produced to international standards. 
                             The series was developed in collaboration with the French company Canal Plus Teama and showcases Ethiopian talent to a global audience. 
                         </p>
                         <p>

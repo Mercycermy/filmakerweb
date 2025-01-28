@@ -23,13 +23,13 @@
 .gallery {
     display: flex;
     gap: 30px;
-    animation: slide 8s linear infinite;
+    animation: slide 15s linear infinite;
 }
 
 .gallery img {
-    width: 25%;
+    width: 15%;
     border-radius: 10px;
-    transition: transform 0.9s ease;
+    transition: transform 0.5s ease;
 }
 
 .gallery img:hover {
@@ -62,6 +62,6 @@
     }
 
     .gallery img {
-        width: 30%;
+        width: 50%;
     }
 }
