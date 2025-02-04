@@ -2,7 +2,7 @@
 
 
 .light {
- --primary-color: #77402e; /* Ultra Very Dark Desert Sand */
+ --primary-color: #82402a; /* Ultra Very Dark Desert Sand */
   --secondary-color: #690D1A; /* Dark Garnet */
   --accent-color: #E76D3C; /* Light Orange Spice */
   --text-color: #F7DDCF; /* Very Light Peach */
@@ -10,10 +10,11 @@
   --button-hover-color: #F3AA85; 
   --background-color:  #EA4335;
   --redish-color:  #eb5c5c;
+  --red-color:  #690D1A;
 }
 
 .dark {
-  --primary-color: #121212; /* Dark Gray for background sections */
+  --primary-color: #dcc371; /* Dark Gray for background sections */
   --secondary-color: #2C2C2C;
   --accent-color:#690D1A;
   --text-color: #E0E0E0; /* Light Gray for primary text */
@@ -21,6 +22,7 @@
   --button-hover-color: #797575e9;
   --background-color: #1F1F1F;
   --redish-color:#1d1d1d;
+  --red-color:#3c3b3b;
 }
 
 .app {

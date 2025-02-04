@@ -57,7 +57,7 @@
 .contact form input, 
 .contact form textarea {
     width: 100%;
-    background: var(--primary-color);
+    background: var(--red-color);
     padding: 15px;
     border: 0;
     outline: 0;
