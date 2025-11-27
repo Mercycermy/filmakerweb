@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/filmakerweb/', // Add this line
+  base: '/', // Changed from '/filmakerweb/' for root deployment
 })
