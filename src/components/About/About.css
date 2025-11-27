@@ -3,10 +3,12 @@
     justify-content: center;
     align-items: flex-start;
     padding: 50px;
+    width: 100%; /* Ensure full width */
 }
 
 .about-right {
-    max-width: 600px;
+    max-width: 800px; /* Increased max-width */
+    width: 100%;
     text-align: left;
 }
 
@@ -52,4 +54,19 @@
 
 .more-info {
     margin-top: 20px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .about {
+        padding: 30px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-right {
+        text-align: center;
+    }
+    .about-title {
+        font-size: 1.8rem;
+    }
 }

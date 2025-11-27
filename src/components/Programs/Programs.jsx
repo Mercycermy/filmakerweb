@@ -1,86 +1,57 @@
 import React, { useState } from 'react';
 import './Program.css';
-import program_1 from '../../assets/program-1.jpg';
-import program_2 from '../../assets/program-2.jpg';
-import program_3 from '../../assets/program-3.jpg';
+import Bts from '../../assets/bts.png';
+import Bts2 from '../../assets/bts2.png';
+import Bts3 from '../../assets/bts3.png';
+import Bts4 from '../../assets/bts4.png';
+import Bts5 from '../../assets/bts5.png';
+import Bts6 from '../../assets/bts6.png';
+import Work from '../../assets/work.png';
+import Work2 from '../../assets/work2.png';
+import Work3 from '../../assets/work3.png';
+import Work4 from '../../assets/work4.png';
+import Work5 from '../../assets/work5.png';
+import Work6 from '../../assets/work6.png';
+import Work7 from '../../assets/work7.png';
+import Work8 from '../../assets/work8.png';
+import Work9 from '../../assets/work9.png';
 import { motion } from "framer-motion";
 
-const programDetails = [
-  {
-    id: 1,
-    title: "Tikur Abeba",
-    description:
-      "Tikur Abeba is Ethiopia's first comedy-horror TV series produced to international standards. Developed in collaboration with Canal Plus, the series showcases Ethiopian talent on a global platform with production quality comparable to Netflix.",
-    image: program_1,
-  },
-  {
-    id: 2,
-    title: "Focus on Ability Short Film Festival 2022",
-    description:
-      "",
-    image: program_2,
-  },
-  {
-    id: 3,
-    title: "TV Ads & Documentaries",
-    description:
-      "Over 7 years, Akilas has worked on TV ads and documentaries for organizations like Ethio Telecom, the Prime Minister's Office, universities, banks, and financial institutions, creating impactful content for Ethiopian and international audiences.",
-    image: program_3,
-  },
-];
+const workImages = [Work, Work2, Work3, Work4, Work5, Work6, Work7, Work8, Work9];
+const btsImages = [Bts, Bts2, Bts3, Bts4, Bts5, Bts6];
 
 const Programs = () => {
-  const [selectedProgram, setSelectedProgram] = useState(null);
-
-  const handleProgramClick = (program) => {
-    setSelectedProgram(program);
-  };
-
-  const closePopup = () => {
-    setSelectedProgram(null);
-  };
-
   return (
     <motion.div className="programs-container">
-      {/* Title Section */}
+      {/* Featured Projects Section */}
       <div className="programs-title">
         <h2>Featured projects</h2>
-          <p>Explore some of the most notable projects we have worked on.</p>
       </div>
 
+      <div className="programs">
+        {workImages.map((img, index) => (
+          <div key={index} className="program">
+            <div className="program-image-wrapper">
+              <img src={img} alt={`Featured Project ${index + 1}`} />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Behind the Scene Section */}
+      <div className="programs-title">
+        <h2>Behind the Scene</h2>
+      </div>
 
       <div className="programs">
-    {/* Program Cards */}
-    {programDetails.map((program) => (
-        <div
-          key={program.id}
-          className="program"
-          onClick={() => handleProgramClick(program)}
-        >
-          {/* Wrap the image with a clickable container */}
-          <div className="program-image-wrapper">
-            <img src={program.image} alt={program.title} />
+        {btsImages.map((img, index) => (
+          <div key={index} className="program">
+            <div className="program-image-wrapper">
+              <img src={img} alt={`Behind the Scene ${index + 1}`} />
+            </div>
           </div>
-        </div>
-      ))}
-
-      {/* Popup */}
-      {selectedProgram && (
-        <div className="popup-overlay" onClick={closePopup}>
-          <div
-            className="popup-content"
-            onClick={(e) => e.stopPropagation()} // Prevent click propagation
-          >
-            <button className="popup-close" onClick={closePopup}>
-              &times;
-            </button>
-            <h3>{selectedProgram.title}</h3>
-            <p>{selectedProgram.description}</p>
-          </div>
-        </div>
-      )}
-  </div>
-     
+        ))}
+      </div>
     </motion.div>
   );
 };

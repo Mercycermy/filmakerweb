@@ -27,36 +27,14 @@ import user_5555 from '../../assets/user-5555.jpg';
 
 const testimonialsData = [
   {
-    img: user_1,
-    name: "Yonas Solomon-Actor",
-    description: "Akilas clearly knew how to seamlessly align, the project and the people.",
+    img: user_5,
+    name: "Mesele G/hiwot-journalist and TV host",
+    description: "As a contemplative director, Akilas has a clear understanding of both his current direction and his future vision.",
     popupDetails: [
-      { img: user_1111 },
-      { img: user_111 },
-      { img: user_11 },
-    {  description: "Akilas clearly knew how to seamlessly align, the project and the people."}
-    ]
-  },
-  {
-    img: user_2,
-    name: "Mahlet Fikadu-Actress",
-    description: "Once he shouted ACTION, it was like he didn’t blink at all!",
-    popupDetails: [
-      { img: user_22 },
-      { img: user_222 },
-      { img: user_2222 },
-     { description: "Once he shouted ACTION, it was like he didn’t blink at all!"}
-    ]
-  },
-  {
-    img: user_3,
-    name: "Shewit kebede-Actress",
-    description: "I love how Akilas effortlessly combines folklore, gender equality, and peace in his films,Documentary's and TV ads.",
-    popupDetails: [
-      { img: user_33 },
-      { img: user_333 },
-      { img: user_3333 },
-     { description: "I love how Akilas effortlessly combines folklore, gender equality, and peace in his films,Documentary's and TV ads."}
+      { img: user_55 },
+      { img: user_555 },
+      { img: user_5555 },
+     { description: "As a contemplative director, Akilas has a clear understanding of both his current direction and his future vision."}
     ]
   },
   {
@@ -71,14 +49,36 @@ const testimonialsData = [
     ]
   },
   {
-    img: user_5,
-    name: "Mesele G/hiwot-journalist and TV host",
-    description: "As a contemplative director, Akilas has a clear understanding of both his current direction and his future vision.",
+    img: user_3,
+    name: "Shewit kebede-Actress",
+    description: "I love how Akilas effortlessly combines folklore, gender equality, and peace in his films,Documentary's and TV ads.",
     popupDetails: [
-      { img: user_55 },
-      { img: user_555 },
-      { img: user_5555 },
-     { description: "As a contemplative director, Akilas has a clear understanding of both his current direction and his future vision."}
+      { img: user_33 },
+      { img: user_333 },
+      { img: user_3333 },
+     { description: "I love how Akilas effortlessly combines folklore, gender equality, and peace in his films,Documentary's and TV ads."}
+    ]
+  },
+  {
+    img: user_2,
+    name: "Mahlet Fikadu-Actress",
+    description: "Once he shouted ACTION, it was like he didn’t blink at all!",
+    popupDetails: [
+      { img: user_22 },
+      { img: user_222 },
+      { img: user_2222 },
+     { description: "Once he shouted ACTION, it was like he didn’t blink at all!"}
+    ]
+  },
+  {
+    img: user_1,
+    name: "Yonas Solomon-Actor",
+    description: "Akilas clearly knew how to seamlessly align, the project and the people.",
+    popupDetails: [
+      { img: user_1111 },
+      { img: user_111 },
+      { img: user_11 },
+    {  description: "Akilas clearly knew how to seamlessly align, the project and the people."}
     ]
   }
 ];
@@ -110,7 +110,7 @@ const Testimonials = () => {
 
   return (
     <div className='testimonials'>
-      <h1 className="testimonials-title">Testimonials</h1>
+      <h1 className="testimonials-title">Words From the Artists</h1>
       <img src={next_icon} className='next-btn' onClick={slideForword} alt="Next" />
       <img src={back_icon} className='back-btn' onClick={slideBackword} alt="Back" />
       <div className="slider">

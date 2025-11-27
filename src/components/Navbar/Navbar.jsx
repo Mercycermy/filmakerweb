@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link } from 'react-scroll';
 import menu_icon from '../../assets/menu-icon.png';
 import ThemeContext from '../../contexts/theme'; // Adjust the path as needed
-import { FaSun, FaMoon } from 'react-icons/fa'; // Icons for light and dark mode
+import { FaSun, FaMoon, FaTimes } from 'react-icons/fa'; // Icons for light and dark mode
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -24,41 +24,46 @@ const Navbar = () => {
     setMobileMenu((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    setMobileMenu(false);
+  };
+
   return (
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
       {/* <img src={logo} alt="Logo" className="logo" /> */}
       <h3 className="logo">Akilas Amebaw</h3>
 
       <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
+        <FaTimes className="menu-close-icon" onClick={closeMenu} />
         <li>
-          <Link to="hero" smooth={true} offset={0} duration={500}>
+          <Link to="hero" smooth={true} offset={0} duration={500} onClick={closeMenu}>
             Home
           </Link>
         </li>
 
         <li>
-          <Link to="about" smooth={true} offset={-150} duration={500}>
+          <Link to="about" smooth={true} offset={-150} duration={500} onClick={closeMenu}>
             About Me
           </Link>
         </li>
         <li>
-          <Link to="program" smooth={true} offset={-260} duration={500}>
+          <Link to="program" smooth={true} offset={-260} duration={500} onClick={closeMenu}>
           Projects
           </Link>
         </li>
         <li>
-          <Link to="client" smooth={true} offset={-100} duration={500}>
+          <Link to="client" smooth={true} offset={-100} duration={500} onClick={closeMenu}>
             Client
           </Link>
         </li>
 
         <li>
-          <Link to="testimonials" smooth={true} offset={-260} duration={500}>
+          <Link to="testimonials" smooth={true} offset={-260} duration={500} onClick={closeMenu}>
             Testimonials
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} offset={-260} duration={500} className="btn">
+          <Link to="contact" smooth={true} offset={-260} duration={500} className="btn" onClick={closeMenu}>
             Contact Me
           </Link>
         </li>

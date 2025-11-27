@@ -27,9 +27,12 @@
 }
 
 .gallery img {
-    width: 15%;
+    width: 300px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensure images cover the area */
     border-radius: 10px;
     transition: transform 0.5s ease;
+    flex-shrink: 0; /* Prevent images from shrinking */
 }
 
 .gallery img:hover {
@@ -57,11 +60,16 @@
 
 /* Responsive Design */
 @media (max-width: 800px) {
+    .client-title {
+        font-size: 1.8rem;
+    }
+
     .gallery {
         gap: 20px;
     }
 
     .gallery img {
-        width: 50%;
+        width: 150px;
+        height: 120px;
     }
 }

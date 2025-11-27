@@ -1,10 +1,14 @@
 .contact {
-    margin: 80px auto;
+    margin: 50px auto; /* Reduced margin */
     max-width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 40px 20px; /* Increased padding for card look */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent dark background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Drop shadow */
 }
 
 .contact-header {
@@ -47,6 +51,7 @@
     align-items: center;
     justify-content: center;
     margin: 10px 0;
+    flex-wrap: wrap; /* Allow wrapping for long emails/phones */
 }
 
 .contact-info ul li img {
@@ -64,6 +69,7 @@
     margin-bottom: 15px;
     resize: none;
     color: var(--text-color);
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
 }
 
 .contact form button {
@@ -83,6 +89,10 @@
 @media (max-width: 700px) {
     .contact-header, .form-col, .contact-info {
         width: 100%;
-        padding: 20px;
+        padding: 0; /* Remove extra padding inside elements */
+    }
+    .contact {
+        margin: 30px auto;
+        padding: 0 10px;
     }
 }
