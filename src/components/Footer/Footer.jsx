@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import { FaWhatsapp, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
@@ -6,12 +7,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <a
-          href="/filmakerweb/privacypolicy"
+        <Link
+          to="/privacypolicy"
 
         >
           Privacy Policy
-        </a>
+        </Link>
         <p>© 2024  Akilas Amebaw. All rights reserved.</p>
       </div>
       <div className="footer-socials">
