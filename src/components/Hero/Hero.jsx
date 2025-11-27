@@ -12,7 +12,7 @@ const Hero = () => {
         >
           <h1>Akilas Amebaw</h1>
           <p>
-            CEO of GEDL Studio and Co-founder of Divine Pictures. A filmmaker with 7+ years of experience in TV ads, documentaries, and series, including Ethiopia's first comedy-horror *Tikur Abeba*. Currently producing *Adrash*, a 104-episode sitcom.
+            An entrepreneur and filmmaker based in Addis Ababa, Ethiopia. Co-founder of Wondgeri Trading PLC, with over 9 years of experience in TVCs, documentaries, TV series, and photography. Currently working on a new mini-series titled Adrash.
           </p>
           <button className="btn">
             <a href="#about">Learn more <img src={dark_arrow} alt="arrow" /></a>

@@ -63,7 +63,7 @@ const Contact = () => {
                     </li>
                     <li>
                         <FaPhoneAlt />
-                        <a href="tel:+251941525061">+251 94 152 5061</a>
+                        <a href="tel:+251941525051">0941525051</a>
                     </li>
                     <li>
                         <FaMapMarkerAlt />

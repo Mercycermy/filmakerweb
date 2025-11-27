@@ -17,7 +17,7 @@ const programDetails = [
     id: 2,
     title: "Focus on Ability Short Film Festival 2022",
     description:
-      "The image promotes the 2022 Focus on Ability Short Film Festival hosted by Nova Employment. It highlights an international short film entry titled Stay on Humanity by Akilal Amebaw from Ethiopia. The festival awards over $100,000 in prizes and ran from August 16 to August 22, 2022. The website for more details is www.focusonability.com.au.",
+      "",
     image: program_2,
   },
   {

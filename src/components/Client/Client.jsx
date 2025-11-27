@@ -8,12 +8,14 @@ import gallary_5 from '../../assets/gallery-5.png';
 import gallary_6 from '../../assets/gallery-6.png';
 import gallary_7 from '../../assets/gallery-7.png';
 import gallary_8 from '../../assets/gallery-8.png';
+import gallary_9 from '../../assets/ethiotele.jpg';
+import gallary_10 from '../../assets/invesimg.jpg';
 import { motion } from "framer-motion";
 
 const Client = () => {
   return (
     <div id="client" className="client">
-      <h1 className="client-title">Our Clients</h1>
+      <h1 className="client-title">MY PREVIOUS CLINTS</h1>
       <motion.div
         className="gallery-slider"
       >
@@ -26,6 +28,8 @@ const Client = () => {
           <img src={gallary_6} alt="Client 6" />
           <img src={gallary_7} alt="Client 7" />
           <img src={gallary_8} alt="Client 8" />
+          <img src={gallary_9} alt="Client 9" />
+          <img src={gallary_10} alt="Client 10" />
         </div>
       </motion.div>
     </div>
