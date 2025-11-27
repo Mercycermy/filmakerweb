@@ -20,7 +20,7 @@ function App() {
   return (
     
       <div className={`app ${themeName}`}  id="top">
-        <Router  basename="/filmakerweb">
+        <Router>
           <Routes>
             <Route path="/" element={
             <>
