@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import { FaWhatsapp, FaYoutube, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaWhatsapp, FaTelegram, FaLinkedinIn, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -20,15 +20,15 @@ const Footer = () => {
         <a href="https://wa.me/251941525051" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
           <FaWhatsapp />
         </a>
-        <a href="https://www.youtube.com/@akilasamebaw636" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-          <FaYoutube />
+        <a href="https://t.me/akilasamebaw" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <FaTelegram />
         </a>
 
         <a href="https://et.linkedin.com/in/akilas-amebaw-1898441b2" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
           <FaLinkedinIn />
         </a>
-        <a href="https://www.instagram.com/akilas_a/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <FaInstagram />
+        <a href="https://www.facebook.com/akilas.amebaw" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <FaFacebook />
         </a>
       </div>
     </footer>

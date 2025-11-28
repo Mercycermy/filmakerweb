@@ -90,12 +90,14 @@ const Testimonials = () => {
   let tx = 0;
 
   const slideForword = () => {
-    if (tx > -75) tx -= 25;
+    const isMobile = window.innerWidth <= 800;
+    const limit = isMobile ? -80 : -40;
+    if (tx > limit) tx -= 20;
     slider.current.style.transform = `translateX(${tx}% )`;
   };
 
   const slideBackword = () => {
-    if (tx < 0) tx += 25;
+    if (tx < 0) tx += 20;
     slider.current.style.transform = `translateX(${tx}% )`;
   };
 
@@ -125,11 +127,13 @@ const Testimonials = () => {
                   </div>
                 </div>
                 <p>{item.description}</p>
-                <FaArrowCircleRight 
-                  className="see-more-icon" 
+                <button 
+                  className="view-btn" 
                   onClick={() => showPopup(item.popupDetails)} 
-                  aria-label="See More"
-                />
+                  aria-label="View Details"
+                >
+                  View
+                </button>
               </div>
             </li>
           ))}

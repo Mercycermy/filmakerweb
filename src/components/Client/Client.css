@@ -22,8 +22,9 @@
 
 .gallery {
     display: flex;
-    gap: 30px;
-    animation: slide 15s linear infinite;
+    /* gap: 30px; Removed to ensure seamless loop calculation */
+    animation: slide 20s linear infinite; /* Slower animation for better visibility */
+    width: max-content; /* Critical: Ensure width fits all images so percentage transform works correctly */
 }
 
 .gallery img {
@@ -33,6 +34,7 @@
     border-radius: 10px;
     transition: transform 0.5s ease;
     flex-shrink: 0; /* Prevent images from shrinking */
+    margin-right: 30px; /* Use margin instead of gap for precise width calculation */
 }
 
 .gallery img:hover {
@@ -44,17 +46,8 @@
     0% {
         transform: translateX(0);
     }
-    25% {
-        transform: translateX(-25%);
-    }
-    50% {
-        transform: translateX(-50%);
-    }
-    75% {
-        transform: translateX(-75%);
-    }
     100% {
-        transform: translateX(0);
+        transform: translateX(-50%); /* Move only half way since we duplicated images */
     }
 }
 
@@ -65,11 +58,13 @@
     }
 
     .gallery {
-        gap: 20px;
+        /* gap: 10px; Removed */
+        animation: slide 15s linear infinite; /* Adjusted speed */
     }
 
     .gallery img {
-        width: 150px;
-        height: 120px;
+        width: 100px; /* Smaller width to fit more */
+        height: 80px; /* Smaller height */
+        margin-right: 10px; /* Use margin instead of gap */
     }
 }

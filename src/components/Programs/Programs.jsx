@@ -25,7 +25,7 @@ const Programs = () => {
     <motion.div className="programs-container">
       {/* Featured Projects Section */}
       <div className="programs-title">
-        <h2>Featured projects</h2>
+        <h2>My Previous Touch</h2>
       </div>
 
       <div className="programs">

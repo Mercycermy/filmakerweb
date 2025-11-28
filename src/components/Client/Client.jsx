@@ -20,6 +20,19 @@ const Client = () => {
         className="gallery-slider"
       >
         <div className="gallery">
+          {/* Original Images */}
+          <img src={gallary_1} alt="Client 1" />
+          <img src={gallary_2} alt="Client 2" />
+          <img src={gallary_3} alt="Client 3" />
+          <img src={gallary_4} alt="Client 4" />
+          <img src={gallary_5} alt="Client 5" />
+          <img src={gallary_6} alt="Client 6" />
+          <img src={gallary_7} alt="Client 7" />
+          <img src={gallary_8} alt="Client 8" />
+          <img src={gallary_9} alt="Client 9" />
+          <img src={gallary_10} alt="Client 10" />
+          
+          {/* Duplicated Images for Seamless Loop */}
           <img src={gallary_1} alt="Client 1" />
           <img src={gallary_2} alt="Client 2" />
           <img src={gallary_3} alt="Client 3" />
