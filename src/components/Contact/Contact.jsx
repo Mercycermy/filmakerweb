@@ -1,34 +1,12 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import './Contact.css';
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 import msg_icon from '../../assets/msg-icon.png';
 import white_arrow from '../../assets/white-arrow.png';
 import { motion } from "framer-motion";
-import emailjs from 'emailjs-com';
 
 const Contact = () => {
-    const [result, setResult] = useState("");
-    const form = useRef();
-
-    const onSubmit = async (event) => {
-        event.preventDefault();
-        setResult("Sending...");
-
-        emailjs.sendForm(
-            'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-            'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-            form.current,
-            'YOUR_USER_ID' // Replace with your EmailJS user ID
-        ).then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-            setResult("Form Submitted Successfully");
-            event.target.reset();
-        }).catch((error) => {
-            console.error('FAILED...', error);
-            setResult("An error occurred. Please try again later.");
-        });
-    };
 
     return (
         <motion.div
@@ -41,16 +19,22 @@ const Contact = () => {
 
             {/* Form Section */}
             <div className="form-col">
-                <form ref={form} onSubmit={onSubmit}>
+                <form action="https://formsubmit.co/contact@akilasamebaw.com" method="POST">
+                    
+                    {/* Disable spam bots */}
+                    <input type="hidden" name="_captcha" value="false" />
+                    
+                    {/* Redirect after success */}
+                    <input type="hidden" name="_next" value="https://akilasamebaw.com/thank-you.html" />
+                    <input type="hidden" name="_subject" value="New Message From Akila Samebaw Website" />
                     <label htmlFor="name">Your name</label>
-                    <input type="text" name='user_name' placeholder='Enter your name' required />
+                    <input type="text" name='name' placeholder='Enter your name' required />
                     <label htmlFor="email">Email</label>
-                    <input type="email" name='user_email' placeholder='Enter your email' required />
+                    <input type="email" name='email' placeholder='Enter your email' required />
                     <label htmlFor="message">Write your message here</label>
-                    <textarea name="message" rows="6" placeholder='Enter your message'></textarea>
+                    <textarea name="message" rows="6" placeholder='Enter your message' required></textarea>
                     <button type='submit' className='btn dark-btn'>Submit now <img src={white_arrow} alt="" /></button>
                 </form>
-                <span>{result}</span>
             </div>
 
             {/* Contact Information Section */}
@@ -59,7 +43,7 @@ const Contact = () => {
                 <ul>
                     <li>
                         <FaEnvelope />
-                        <a href="mailto:akilasamebaw@gmail.com">akilasamebaw@gmail.com</a>
+                        <a href="mailto:contact@akilasamebaw.com">contact@akilasamebaw.com</a>
                     </li>
                     <li>
                         <FaPhoneAlt />

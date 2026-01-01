@@ -1,40 +1,45 @@
 .privacy-policy {
     font-family: 'Arial', sans-serif;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 24px;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: rgba(0,0,0,0.18); /* subtle card on dark background */
+    border: 1px solid rgba(255,255,255,0.06);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    color: var(--text-color);
   }
   
   .privacy-policy h1 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-  }
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--button-hover-color);
+    }
   
   .privacy-policy h2 {
-    font-size: 1.5rem;
-    margin-top: 20px;
-    color: #444;
-    border-left: 4px solid #007BFF;
-    padding-left: 10px;
-  }
+      font-size: 1.4rem;
+      margin-top: 20px;
+      color: var(--text-color);
+      border-left: 4px solid var(--accent-color);
+      padding-left: 10px;
+    }
   
   .privacy-policy p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 15px;
-  }
+      font-size: 1rem;
+      color: var(--text-color);
+      margin-bottom: 15px;
+    }
   
   .privacy-policy a {
-    color: #007BFF;
-    text-decoration: none;
-    font-weight: bold;
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+  .dark .privacy-policy a {
+    color: #E76D3C; /* Lighter orange for better visibility in dark mode */
   }
   
   .privacy-policy a:hover {
@@ -42,8 +47,8 @@
   }
   
   .privacy-policy strong {
-    color: #000;
-  }
+      color: var(--button-hover-color);
+    }
   
   @media (max-width: 768px) {
     .privacy-policy {

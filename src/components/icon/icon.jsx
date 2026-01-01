@@ -38,7 +38,7 @@ const ContactIcons = () => {
       {/* Email Icon */}
       <div className="scroll-top" style={emailStyle}>
         <a
-          href="mailto:akilasamebaw@gmail.com"  // Replace with your email address
+          href="mailto:contact@akilasamebaw.com"
           aria-label="Send Email"
         >
           <div className="email-icon-circle">

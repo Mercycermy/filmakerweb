@@ -27,12 +27,12 @@ const PrivacyPolicy = () => {
       <h2>Your Rights:</h2>
       <p>
         You can request access to, correction, or deletion of your personal data by contacting me at {" "}
-        <a href="mailto:sklasemebew@gmail.com">sklasemebew@gmail.com</a>.
+        <a href="mailto:contact@akilasamebaw.com">contact@akilasamebaw.com</a>.
       </p>
       <h2>Contact Me:</h2>
       <p>
         For any questions about this Privacy Policy, please contact me at {" "}
-        <a href="mailto:sklasemebew@gmail.com">sklasemebew@gmail.com</a>.
+        <a href="mailto:contact@akilasamebaw.com">contact@akilasamebaw.com</a>.
       </p>
     </div>
   );
