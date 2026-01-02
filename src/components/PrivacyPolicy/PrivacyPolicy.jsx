@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
     <div className="privacy-policy">
       <h1>Privacy Policy</h1>
       <p>
-        This website is owned and operated by <strong>Akilas Amebaw</strong>. We are committed to protecting your privacy.
+        This website is owned and operated by <strong>Jordan Doe</strong>. We are committed to protecting your privacy.
       </p>
       <h2>Information We Collect:</h2>
       <p>
@@ -27,12 +27,12 @@ const PrivacyPolicy = () => {
       <h2>Your Rights:</h2>
       <p>
         You can request access to, correction, or deletion of your personal data by contacting me at {" "}
-        <a href="mailto:contact@akilasamebaw.com">contact@akilasamebaw.com</a>.
+        <a href="mailto:hello@jordandoe.dev">hello@jordandoe.dev</a>.
       </p>
       <h2>Contact Me:</h2>
       <p>
         For any questions about this Privacy Policy, please contact me at {" "}
-        <a href="mailto:contact@akilasamebaw.com">contact@akilasamebaw.com</a>.
+        <a href="mailto:hello@jordandoe.dev">hello@jordandoe.dev</a>.
       </p>
     </div>
   );

@@ -29,7 +29,7 @@ const testimonialsData = [
   {
     img: user_5,
     name: "Mesele G/hiwot-journalist and TV host",
-    description: "As a contemplative director, Akilas has a clear understanding of both his current direction and his future vision.",
+    description: "As a contemplative director, Jordan has a clear understanding of both his current direction and his future vision.",
     popupDetails: [
       { img: user_55 },
       { img: user_555 },
@@ -51,7 +51,7 @@ const testimonialsData = [
   {
     img: user_3,
     name: "Shewit kebede-Actress",
-    description: "I love how Akilas effortlessly combines folklore, gender equality, and peace in his films,Documentary's and TV ads.",
+    description: "I love how Jordan effortlessly combines folklore, gender equality, and peace in his films, documentary pieces and TV ads.",
     popupDetails: [
       { img: user_33 },
       { img: user_333 },
@@ -73,7 +73,7 @@ const testimonialsData = [
   {
     img: user_1,
     name: "Yonas Solomon-Actor",
-    description: "Akilas clearly knew how to seamlessly align, the project and the people.",
+    description: "Jordan clearly knew how to seamlessly align the project and the people.",
     popupDetails: [
       { img: user_1111 },
       { img: user_111 },
