@@ -28,57 +28,57 @@ import user_5555 from '../../assets/user-5555.jpg';
 const testimonialsData = [
   {
     img: user_5,
-    name: "Mesele G/hiwot-journalist and TV host",
-    description: "As a contemplative director, Jordan has a clear understanding of both his current direction and his future vision.",
+    name: "Reviewer 1 — Journalist",
+    description: "As a contemplative director, the director has a clear understanding of both current direction and future vision.",
     popupDetails: [
       { img: user_55 },
       { img: user_555 },
       { img: user_5555 },
-     { description: "As a contemplative director, Akilas has a clear understanding of both his current direction and his future vision."}
+     { description: "As a contemplative director, the director has a clear understanding of both current direction and future vision."}
     ]
   },
   {
     img: user_4,
-    name: "Yegerm Dejenie-Actor and TV host",
-    description: "At times, I don't fully get what he's doing, but when he shows me on the monitor, it absolutely blows my mind!",
+    name: "Reviewer 2 — Actor",
+    description: "At times, I don't fully get what they're doing, but when shown on the monitor, it absolutely impresses me.",
     popupDetails: [
       { img: user_44 },
       { img: user_444 },
       { img: user_4444 },
-     { description: "At times, I don't fully get what he's doing, but when he shows me on the monitor, it absolutely blows my mind!"}
+     { description: "At times, I don't fully get what they're doing, but when shown on the monitor, it absolutely impresses me."}
     ]
   },
   {
     img: user_3,
-    name: "Shewit kebede-Actress",
-    description: "I love how Jordan effortlessly combines folklore, gender equality, and peace in his films, documentary pieces and TV ads.",
+    name: "Reviewer 3 — Actress",
+    description: "I love how the director combines folklore, social themes, and visual storytelling in their work.",
     popupDetails: [
       { img: user_33 },
       { img: user_333 },
       { img: user_3333 },
-     { description: "I love how Akilas effortlessly combines folklore, gender equality, and peace in his films,Documentary's and TV ads."}
+     { description: "I love how the director combines folklore, social themes, and visual storytelling in their work."}
     ]
   },
   {
     img: user_2,
-    name: "Mahlet Fikadu-Actress",
-    description: "Once he shouted ACTION, it was like he didn’t blink at all!",
+    name: "Reviewer 4 — Actress",
+    description: "Once the director shouted ACTION, the set came alive.",
     popupDetails: [
       { img: user_22 },
       { img: user_222 },
       { img: user_2222 },
-     { description: "Once he shouted ACTION, it was like he didn’t blink at all!"}
+     { description: "Once the director shouted ACTION, the set came alive."}
     ]
   },
   {
     img: user_1,
-    name: "Yonas Solomon-Actor",
-    description: "Jordan clearly knew how to seamlessly align the project and the people.",
+    name: "Reviewer 5 — Actor",
+    description: "The director clearly knew how to align the project and the people involved.",
     popupDetails: [
       { img: user_1111 },
       { img: user_111 },
       { img: user_11 },
-    {  description: "Akilas clearly knew how to seamlessly align, the project and the people."}
+    {  description: "The director clearly knew how to align the project and the people."}
     ]
   }
 ];

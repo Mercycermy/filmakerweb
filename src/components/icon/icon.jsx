@@ -23,7 +23,7 @@ const ContactIcons = () => {
       {/* WhatsApp Icon */}
       <div className="scroll-top" style={whatsappStyle}>
         <a
-          href="https://wa.me/251941525051"  // Replace with your WhatsApp link
+          href="#"
           aria-label="Chat on WhatsApp"
           target="_blank"
           rel="noreferrer"
@@ -38,7 +38,7 @@ const ContactIcons = () => {
       {/* Email Icon */}
       <div className="scroll-top" style={emailStyle}>
         <a
-          href="mailto:contact@akilasamebaw.com"
+          href="mailto:example@email.com"
           aria-label="Send Email"
         >
           <div className="email-icon-circle">

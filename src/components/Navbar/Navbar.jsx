@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
       {/* <img src={logo} alt="Logo" className="logo" /> */}
-      <h3 className="logo">Akilas Amebaw</h3>
+      <h3 className="logo">Filmmaker Portfolio</h3>
 
       <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
         <FaTimes className="menu-close-icon" onClick={closeMenu} />

@@ -10,9 +10,9 @@ const Hero = () => {
         <motion.div
           className="hero-text"
         >
-          <h1>Akilas Amebaw</h1>
+          <h1>&lt;USER_NAME&gt;</h1>
           <p>
-            An entrepreneur and filmmaker based in Addis Ababa, Ethiopia. Co-founder of Wondgeri Trading PLC, with over 9 years of experience in TVCs, documentaries, TV series, and photography. Currently working on a new mini-series titled Adrash.
+            Filmmaker and creative professional. Portfolio highlights include short films, documentaries, and serialized projects. Replace this text with your biography.
           </p>
           <button className="btn">
             <a href="#about">Learn more <img src={dark_arrow} alt="arrow" /></a>

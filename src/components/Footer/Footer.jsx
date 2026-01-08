@@ -13,13 +13,13 @@ const Footer = () => {
         >
           Privacy Policy
         </Link>
-        <p>© 2024  Akilas Amebaw. All rights reserved.</p>
+        <p>© 2024 Filmmaker Portfolio. All rights reserved.</p>
       </div>
       <div className="footer-socials">
-        <a href="https://t.me/akilasamebaw" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
           <FaTelegram />
         </a>
-        <a href="https://www.facebook.com/akilas.amebaw" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
           <FaFacebook />
         </a>
       </div>

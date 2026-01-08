@@ -1,9 +1,41 @@
- Portfolio Website
+# Filmmaker Portfolio
 
-Short portfolio site showcasing small film and media projects, client testimonials, and contact details.
+One-sentence description: A minimal portfolio site template for filmmakers and media professionals.
 
-Tech
-- React + Vite
-- Simple responsive CSS components
+Key features:
+- Project showcase section
+- Testimonials slider
+- Contact form and contact info components
 
-This repo is a concise portfolio used to demonstrate front-end structure and project storytelling for GitHub.
+Tech stack:
+- React
+- Vite
+- CSS (component-level)
+
+Setup:
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run development server:
+
+```bash
+npm run dev
+```
+
+Build:
+
+```bash
+npm run build
+```
+
+How to run:
+- Start the dev server with `npm run dev` and open `http://localhost:5173`.
+
+Example (contact form):
+- The contact form posts to an external form endpoint; replace the action and contact email in `.env` or component config before deploying.
+
+License:
+- MIT (replace with a chosen license if needed)
