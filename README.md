@@ -1,7 +1,4 @@
 # Filmmaker Portfolio
-
-One-sentence description: A minimal portfolio site template for filmmakers and media professionals.
-
 Key features:
 - Project showcase section
 - Testimonials slider
